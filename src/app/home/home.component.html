@@ -1,0 +1,135 @@
+<div class="div-header-container">
+  <div id="div-header"></div>
+  <div id="div-header-img">
+    <img src="../../assets/img/logo-je.png" />
+  </div>
+</div>
+
+<div class="container">
+  <div class="display-container" *ngIf="display01">
+    <label>Presidente</label>
+    <div>
+      <input type="text" [value]="inputOne" />
+      <input type="text" [value]="inputTwo" />
+    </div>
+  </div>
+  <div class="display-container" *ngIf="display02">
+
+    <span id="toVote">SEU VOTO PARA</span>
+    <div id="displaybox01">
+      <label>Presidente</label>
+      <div id="boxInput">
+        <span>Numero:</span>
+        <input type="text" [value]="inputOne" />
+        <input type="text" [value]="inputTwo" />
+      </div>
+      
+
+      <span id="nullVote">VOTO EM BRANCO</span>
+    </div>
+
+    <div id="displaybox02">
+      <span id="checkVote" *ngIf="setTime">CONFIRA SEU VOTO</span>
+      <div *ngIf="setTimeDiv" id="alertDiv">
+        <span>Aperte a tecla:</span>
+        <span>CONFIRMA para CONFIRMAR este voto</span>
+        <span>CORRIGE para REINICIAR este voto</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="display-container" *ngIf="display03" id="display-container03">
+    <span id="toVote">SEU VOTO PARA</span>
+    <div id="displaybox01">
+      <label>Presidente</label>
+      <div id="boxInput">
+        <span>Numero:</span>
+        <input type="text" [value]="inputOne" />
+        <input type="text" [value]="inputTwo" />
+      </div>
+      <span id="wrongNumber">NÚMERO ERRADO</span>
+
+      <span id="nullVote">VOTO NULO</span>
+    </div>
+    <div id="displaybox02">
+      <span id="checkVote" *ngIf="setTime">CONFIRA SEU VOTO</span>
+      <div *ngIf="setTimeDiv" id="alertDiv">
+        <span>Aperte a tecla:</span>
+        <span>CONFIRMA para CONFIRMAR este voto</span>
+        <span>CORRIGE para REINICIAR este voto</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="display-container" *ngIf="display04" id="display-container04"> <!-- Candidate-->
+
+
+      <span id="toVote">SEU VOTO PARA</span>
+    <div id="displaybox01">
+      <label>Presidente</label>
+      <div id="boxInput">
+        <span>Numero:</span>
+        <input type="text" [value]="inputOne" />
+        <input type="text" [value]="inputTwo" />
+      </div>
+    </div>
+    <div id="box-img" *ngIf="bolsonaro_img">
+      <img src="../../assets/img/bolsonaro.jpg" id="candidate-img">
+      <img src="../../assets/img/braga.jpg" id="candidate-img">
+    </div>
+    <div id="box-img" *ngIf="lula_img">
+      <img src="../../assets/img/lula.jpg" id="candidate-img">
+      <img src="../../assets/img/alckmin.jpg" id="candidate-img">
+    </div>
+
+    <div id="displaybox02">
+      <span id="checkVote" *ngIf="setTime">CONFIRA SEU VOTO</span>
+      <div *ngIf="setTimeDiv" id="alertDiv">
+        <span>Aperte a tecla:</span>
+        <span>CONFIRMA para CONFIRMAR este voto</span>
+        <span>CORRIGE para REINICIAR este voto</span>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+  <div class="display-container" *ngIf="btn_green" id="div-containerFIM">
+    <h1>FIM</h1>
+  </div>
+
+  <div class="btn-container">
+    <div class="logo">
+      <img src="../../assets/img/brasao.png" />
+      <span>JUSTIÇA ELEITORAL</span>
+    </div>
+
+    <div class="keyboard">
+      <div class="keyboard-number">
+        <input type="button" value="1" (click)="getImputNumber('1')" />
+        <input type="button" value="2" (click)="getImputNumber('2')" />
+        <input type="button" value="3" (click)="getImputNumber('3')" />
+        <input type="button" value="4" (click)="getImputNumber('4')" />
+        <input type="button" value="5" (click)="getImputNumber('5')" />
+        <input type="button" value="6" (click)="getImputNumber('6')" />
+        <input type="button" value="7" (click)="getImputNumber('7')" />
+        <input type="button" value="8" (click)="getImputNumber('8')" />
+        <input type="button" value="9" (click)="getImputNumber('9')" />
+        <input type="button" value="0" (click)="getImputNumber('0')" />
+      </div>
+      <div class="keyboard-submit">
+        <input type="button" value="Branco" class="btn-white" (click)="white()"/>
+        <input
+          type="button"
+          value="Corrige"
+          class="btn-orange"
+          (click)="correct()"
+        />
+        <input type="button" value="Confirma" class="btn-green" (click)="green()"/>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.div-header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#div-header {
+  min-height: 35px;
+  background-color: #1b305a;
+}
+#div-header-img {
+  border-bottom: 1px solid rgb(190, 186, 186);
+  padding: 5px 35px;
+}
+
+.container {
+  box-shadow: 1px 1px 10px #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 427px;
+  width: 928px;
+  background-color: #cac3b1;
+  border-radius: 3px;
+}
+
+.btn-container {
+  box-shadow: 1px 1px 10px #000;
+  width: 288px;
+  height: 384px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2ede7;
+  border-radius: 3px;
+}
+.logo > img {
+  width: 70px;
+  height: 70px;
+}
+.logo > span {
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: #333;
+  text-align: center;
+}
+.keyboard {
+  border-radius: 3px;
+  background-color: #484242;
+  width: 100%;
+  height: 314px;
+}
+.keyboard-number {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  height: 251px;
+}
+.keyboard-number input {
+  width: 60px;
+  height: 38px;
+  margin: 10px;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #222;
+  border: none;
+  border-radius: 3px;
+}
+.keyboard-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+}
+.keyboard-submit input {
+  border: none;
+  margin: 5px;
+  width: 80px;
+  font-size: 1rem;
+  border-radius: 3px;
+}
+.btn-white {
+  height: 30px;
+  background-color: #fff;
+}
+.btn-orange {
+  height: 30px;
+  background-color: orange;
+}
+.btn-green {
+  height: 44px;
+  background-color: green;
+}
+input:hover {
+  box-shadow: 1px 1px 3px #fff;
+}
+
+.display-container {
+  width: 547px;
+  height: 320px;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display-container label{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+#display-container03 {
+}
+#displaybox01 {
+  height: 265px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#displaybox02 {
+  width: 100%;
+  height: 55px;
+  border-top: 1px solid ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#toVote{
+  text-align: left;
+  width: 100%;
+  padding: 10px;
+}
+#checkVote{
+font-size: 2.5rem;
+}
+#wrongNumber{
+ 
+  font-size: 1.2rem;
+}
+#nullVote{
+  display: inline-block;
+  font-size: 2.5rem;
+  text-align: center;
+  width: 100%;
+}
+#boxInput{
+  padding: 10px;
+  display: inline;
+}
+#alertDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  
+  font-size: 1.8rem;
+  padding: 20px;
+}
+input {
+  font-size: 1.5rem;
+  width: 30px;
+  height: 35px;
+  outline: none;
+  text-align: center;
+}
+
+#box-img{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 10px;
+ right: 10px;
+}
+#display-container04{
+  position: relative;
+}
+#candidate-img{
+  width: 90px;
+  aspect-ratio: 3/4;
+  margin: 2px;
+}
+h1{
+  font-size: 5rem;
+}
+#div-containerFIM{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
